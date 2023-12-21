@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/* Estilo geral para a página */
+body {
+    background: url('../images/bg\ desfoque.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Estilo para a caixa de chat */
+.chatbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 90vh;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Estilo para os registros de chat */
+.chatlogs {
+    padding: 10px;
+    border-radius: 5px;
+    width: 90%;
+    height: 90vh;
+    padding: 20px;
+    overflow-y: scroll;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.chatlogs::-webkit-scrollbar {
+    width: 0;
+}
+
+.chatlogs::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.chatlogs {
+    scrollbar-width: none;
+}
+
+
+/* Estilo para a entrada do usuário */
+.user-input {
+    width: 40%;
+    padding: 15px;
+    font-size: 20px; 
+    border: none;
+    outline: 0;
+    border-radius: 30px;
+    margin-top: 10px;
+    border: 3px solid #658955;
+}
+
+/* Estilo para as mensagens do bot */
+.chat.bot {
+    color: #272727; /* Cor do texto das mensagens do bot */
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+    font-size:0;
+    font-weight: bold;
+    width: 60vw;
+    align-self: flex-start;
+    display: flex;
+}
+
+
+
+/* Estilo para as mensagens do usuário */
+.chat.user {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    left: 63vw;
+    color: #272727; /* Cor do texto das mensagens do usuário */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0;
+    font-weight: bold;
+    width: 23vw;
+
+}
+
+
+
+.loader {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 20px 40px #01ff40, 0px -20px 40px #9cff1c, 20px 0px 40px#ffe600, -20px 0px 40px #ffe600;
+    border-radius: 10em;
+    position: absolute;
+    animation: rotate 1s linear infinite;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+ 
