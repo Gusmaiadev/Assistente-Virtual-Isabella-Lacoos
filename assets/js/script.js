@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
     function selectVoice() {
         let voices = window.speechSynthesis.getVoices();
         let ptVoices = voices.filter(voice => voice.lang.includes('pt-BR'));
-        if (ptVoices.length > 3) {
-            selectedVoice = ptVoices[3];  // Use a primeira voz em português disponível
+        if (ptVoices.length > 4) {
+            selectedVoice = ptVoices[4];  // Use a primeira voz em português disponível
         }
     }
 
